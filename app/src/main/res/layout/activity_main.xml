@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myKilometersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Kilometers: 0"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/kilometersInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter kilometers run"
+        android:layout_below="@id/myKilometersTextView"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/addKilometersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Kilometers"
+        android:layout_below="@id/kilometersInput"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/hisKilometersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toby's Kilometers: 0"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addKilometersButton"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/hisKilometersInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter kilometers run"
+        android:layout_below="@id/hisKilometersTextView"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/hisAddKilometersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hisKilometersInput"
+        android:layout_centerHorizontal="true"
+        android:text="Add Kilometers" />
+</RelativeLayout>
