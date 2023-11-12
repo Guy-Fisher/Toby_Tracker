@@ -10,41 +10,42 @@
         android:id="@+id/myKilometersTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My Kilometers: 0"
         android:layout_centerHorizontal="true"/>
 
     <EditText
-        android:id="@+id/kilometersInput"
-        android:layout_width="match_parent"
+        android:id="@+id/myKilometersInput"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter kilometers run"
         android:layout_below="@id/myKilometersTextView"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"/>
 
     <Button
         android:id="@+id/addKilometersButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Kilometers"
-        android:layout_below="@id/kilometersInput"
+        android:layout_below="@id/myKilometersInput"
         android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/hisKilometersTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Toby's Kilometers: 0"
+        android:text="Toby's Kilometers: 0.0"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/addKilometersButton"
         android:layout_marginTop="50dp"/>
 
     <EditText
         android:id="@+id/hisKilometersInput"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter kilometers run"
         android:layout_below="@id/hisKilometersTextView"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"/>
 
     <Button
         android:id="@+id/hisAddKilometersButton"
@@ -53,4 +54,13 @@
         android:layout_below="@id/hisKilometersInput"
         android:layout_centerHorizontal="true"
         android:text="Add Kilometers" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hisAddKilometersButton"
+        android:layout_centerHorizontal="true"
+        android:text="Settings"
+        android:layout_marginTop="50dp"/>
 </RelativeLayout>
