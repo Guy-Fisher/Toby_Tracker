@@ -10,7 +10,7 @@
         android:id="@+id/myKilometersTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Kilometers: 0"
+        android:text="My Kilometers: 0"
         android:layout_centerHorizontal="true"/>
 
     <EditText
